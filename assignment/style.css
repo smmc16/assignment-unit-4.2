@@ -1,0 +1,59 @@
+header {
+    background-color: rgb(36, 36, 36);
+}
+
+.info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 115px 1fr 90px;
+}
+
+h2 {
+    background-color: aquamarine;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    grid-row: 1 / 1;
+    grid-column: 2 / 3;
+}
+
+h3 {
+    background-color: aquamarine;
+    color:black;
+    padding: 10px;
+    text-align: center;
+    grid-row: 3 / 3;
+    grid-column: 2 / 3;
+}
+
+img {
+    width: 500px;
+    display: block;
+    margin: auto;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+/*I found this code on stackoverflow */
+
+.sarah:hover {
+    animation: rainbow .5s linear 0s infinite;
+}
+
+@keyframes rainbow {
+    from {
+        color: #6666ff;
+      }
+      10% {
+        color: #0099ff;
+      }
+      50% {
+        color: #00ff00;
+      }
+      75% {
+        color: #ff3399;
+      }
+      100% {
+        color: #6666ff;
+      }
+}
